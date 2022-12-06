@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: lightgreen;
+    font-size: 16px;
+}
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.container{
+    width: 70vh;
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vmin;
+}
+.button-option{
+    background-color: #f6f6f6;
+    height: 22vh;
+    width: 22vh;
+    border: none;
+    border-radius: 8px;
+    font-size: 12vh;
+}
+#restart{
+    font-size: 1.3rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: rgb(0, 54, 115);
+    color: #f6f6f6;
+    border: none;
+    position: relative;
+    margin: 1.5rem auto 0 auto;
+    display: block;
+}
+.popup{
+    background-color: lightgreen;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 12vh;
+}
+#new-game{
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    background-color: rgb(0, 54, 115);
+    color: #f6f6f6;
+    border-radius: 0.2rem;
+    border: none;
+}
+#message{
+    color: #f6f6f6;
+    text-align: center;
+    font-size: 4rem;
+}
+.popup.hide{
+    display: none;
+    transition: 0.3s ease;
+}
+
+@media screen and (max-width : 600px){
+    .container{
+        height: 50vh;
+        width: 50vh;
+    }
+    .button-option{
+        height: 15vh;
+        width: 15vh;
+    }
+}
