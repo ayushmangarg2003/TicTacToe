@@ -73,11 +73,11 @@ body{
 
 @media screen and (max-width : 600px){
     .container{
-        height: 50vh;
-        width: 50vh;
+        height: 40vh;
+        width: 40vh;
     }
     .button-option{
-        height: 15vh;
-        width: 15vh;
+        height: 12vh;
+        width: 12vh;
     }
 }
